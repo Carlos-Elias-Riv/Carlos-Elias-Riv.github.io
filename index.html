@@ -1,249 +1,533 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Meyawo landing page.">
-    <meta name="author" content="Devcrud">
-    <title>Carlos Rivera Page</title>
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + Meyawo main styles -->
-	<link rel="stylesheet" href="assets/css/meyawo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carlos Elias Rivera Mercado - Data Scientist & Software Developer specializing in Machine Learning, AI, and Cloud Architecture">
+    <meta name="author" content="Carlos Elias Rivera Mercado">
+    <title>Carlos Rivera | Data Scientist & Software Developer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-
-    <!-- Page Navbar -->
-    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
-        <div class="container">
-            <a class="logo" href="#">Carlos Rivera M</a>         
-            <ul class="nav">
-                <li class="item">
-                    <a class="link" href="#home">Main</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#about">Acerca de mi</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#portfolio">Momentos</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#contact">Info Contacto</a>
-                </li>
-                <li class="item ml-md-3">
-                    <a href="#blog" class="btn btn-primary">Blog AGI</a>
-                </li>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">CR</a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link" data-en="Home" data-es="Inicio">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link" data-en="About" data-es="Acerca">About</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link" data-en="Experience" data-es="Experiencia">Experience</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link" data-en="Projects" data-es="Proyectos">Projects</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link" data-en="Skills" data-es="Habilidades">Skills</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link" data-en="Contact" data-es="Contacto">Contact</a></li>
+                </ul>
                 
-            </ul>
-            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
-                <div class="hamburger-box">
-                  <div class="hamburger-inner"></div>
+                <button class="lang-toggle" id="lang-toggle">
+                    <span class="lang-option active" data-lang="en">EN</span>
+                    <span class="lang-separator">|</span>
+                    <span class="lang-option" data-lang="es">ES</span>
+                </button>
+            </div>
+            
+            <button class="nav-toggle" id="nav-toggle">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting" data-en="Hi, I'm" data-es="Hola, soy">Hi, I'm</p>
+                <h1 class="hero-title">Carlos Elias Rivera Mercado</h1>
+                <p class="hero-subtitle" data-en="Data Scientist & Software Developer" data-es="Científico de Datos & Desarrollador de Software">Data Scientist & Software Developer</p>
+                <p class="hero-description" data-en="Transforming data into insights and building intelligent solutions with AI, Machine Learning, and Cloud Technologies." data-es="Transformando datos en insights y construyendo soluciones inteligentes con IA, Machine Learning y Tecnologías en la Nube.">
+                    Transforming data into insights and building intelligent solutions with AI, Machine Learning, and Cloud Technologies.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary" data-en="View Projects" data-es="Ver Proyectos">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary" data-en="Contact Me" data-es="Contáctame">Contact Me</a>
                 </div>
+            </div>
+            <div class="hero-scroll">
+                <a href="#about" class="scroll-link">
+                    <i class="fas fa-chevron-down"></i>
             </a>
         </div>          
-    </nav><!-- End of Page Navbar -->
-
-    <!-- page header -->
-    <header id="home" class="header">
-        <div class="overlay"></div>
-        <div class="header-content container">
-            <h1 class="header-title">
-                <span class="down">WebPage de Carlos Elias Rivera Mercado</span>
-            </h1>
-            <p class="header-subtitle">Científico de Datos en proceso</p>            
-
-            <a href="https://github.com/Carlos-Elias-Riv?tab=repositories">
-                <button class="btn btn-primary">Proyectos en Github </button>
-            </a>
-        </div>              
-    </header><!-- end of page header -->
-
-    <!-- about section -->
-    <section class="section pt-0" id="about">
-        <!-- container -->
-        <div class="container text-center">
-            <!-- about wrapper -->
-            <div class="about">
-                <div class="about-img-holder">
-                    <img src="assets/imgs/IMG_1302.png" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                </div>
-                <div class="about-caption">
-                    <p class="section-subtitle">¿Carlos Rivera?</p>
-                    <h2 class="section-title mb-3">Un poco de mi</h2>
-                    <p>
-                        Soy estudiante de ciencia de datos, con una gran pasión por las matemáticas y la programación.  
-                        Actualmente curso mi cuarto semestre de la carrera e inicio mi camino por la estadística y un entendimiento más a fondo de la programación. Mi proyecto más interesante fue hacer una inteligencia artifical que fuese invencible en NimGame. 
-                        Al presente trabajo en un proyecto de cine mexicano con el objetivo de poder acercar a más personas a este gran arte mexicano. Ambos proyectos se pueden encontrar en mi github.
-                    </p>
-                    <a href="assets/imgs/CV-2023-Español.pdf">
-                        <button class="btn-rounded btn btn-outline-primary mt-4"> 
-                            Download CV
-                        </button>
-                    </a>
-                    
-                </div>              
-            </div><!-- end of about wrapper -->
-        </div><!-- end of container -->
-    </section> <!-- end of about section -->
-
-    <!-- service section -->
-    <section class="section" id="service">
-        <div class="container text-center">
-            <p class="section-subtitle">¿De qué disfruto?</p>
-            <h6 class="section-title mb-6">Intereses principales</h6>
-            <!-- row -->
-            <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/basket.svg"  class="icon">
-                            <h6 class="title">Basketball</h6>
-                            <p class="subtitle">Desde secundaria practico basketball y es una actividad que disfruto muchísimo</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/electricguitar.svg"  class="icon">
-                            <h6 class="title">Música & Guitarra</h6>
-                            <p class="subtitle">Soy un gran fan de la música y desde hace dos años toco guitarra</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/computadora.svg" class="icon">
-                            <h6 class="title">Data Science & AI</h6>
-                            <p class="subtitle">Desde preparatoria soy un fan constante de mi carrera y de la carrera de AI</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/profe.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
-                            <h6 class="title">Labs</h6>
-                            <p class="subtitle">A partir de enero 2023 soy mentor/laber de materias de economía y computación</p>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- end of row -->
         </div>
-    </section><!-- end of service section -->
+    </section>
 
-    <!-- portfolio section -->
-    <section class="section" id="portfolio">
-        <div class="container text-center">
-            <h6 class="section-title mb-6">Capturas de momentos</h6>
-            <!-- row -->
-            <div class="row">
-                <div class="col-md-4">
-                    <a class="portfolio-card">
-                        <img src="assets/imgs/IMG_6069.png" class="portfolio-card-img">                       
-                    </a>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="About Me" data-es="Acerca de Mí">About Me</h2>
+                <p class="section-subtitle" data-en="Turning data into actionable insights and building innovative solutions" data-es="Convirtiendo datos en insights accionables y construyendo soluciones innovadoras">
+                    Turning data into actionable insights and building innovative solutions
+                </p>
+        </div>              
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/imgs/IMG_1302.png" alt="Carlos Rivera">
                 </div>
-                <div class="col-md-4">
-                    <a  class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/IMG_0432.png" class="img-responsive rounded" >                        
-                    </a>
+                
+                <div class="about-text">
+                    <p class="about-description" data-en="I'm a Data Scientist and Software Developer with experience in building and deploying machine learning models, web applications, and data pipelines. Currently pursuing my Bachelor of Science in Data Science at Instituto Tecnológico Autónomo de México (ITAM) with a GPA of 9.58/10." data-es="Soy un Científico de Datos y Desarrollador de Software con experiencia en la construcción y despliegue de modelos de machine learning, aplicaciones web y pipelines de datos. Actualmente cursando mi Licenciatura en Ciencia de Datos en el Instituto Tecnológico Autónomo de México (ITAM) con un promedio de 9.58/10.">
+                        I'm a Data Scientist and Software Developer with experience in building and deploying machine learning models, web applications, and data pipelines. Currently pursuing my Bachelor of Science in Data Science at Instituto Tecnológico Autónomo de México (ITAM) with a GPA of 9.58/10.
+                    </p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4 data-en="Education Excellence" data-es="Excelencia Académica">Education Excellence</h4>
+                                <p data-en="Academic Excellence Award for Highest Grade (Spring 2023)" data-es="Premio a la Excelencia Académica por Calificación Más Alta (Primavera 2023)">Academic Excellence Award for Highest Grade (Spring 2023)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <i class="fas fa-globe"></i>
+                            <div>
+                                <h4 data-en="Study Abroad" data-es="Intercambio Académico">Study Abroad</h4>
+                                <p data-en="Aalto University, Finland - Deep Learning & AI courses" data-es="Universidad Aalto, Finlandia - Cursos de Deep Learning e IA">Aalto University, Finland - Deep Learning & AI courses</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <i class="fas fa-trophy"></i>
+                            <div>
+                                <h4 data-en="IBM AI Hackathon Winner" data-es="Ganador del Hackathon de IA de IBM">IBM AI Hackathon Winner</h4>
+                                <p data-en="Won international IBM AI hackathon with a fully international team" data-es="Ganador del hackathon internacional de IA de IBM con un equipo totalmente internacional">Won international IBM AI hackathon with a fully international team</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-image-secondary">
+                        <img src="assets/imgs/IBM_HACKATHON.jpeg" alt="IBM Hackathon">
+                        <p class="image-caption" data-en="IBM AI Hackathon - Aalto University, Finland" data-es="Hackathon de IA de IBM - Universidad Aalto, Finlandia">IBM AI Hackathon - Aalto University, Finland</p>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <a  class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/IMG_0471.png" class="img-responsive rounded" >                     
-                    </a>
-                </div>
-            </div><!-- end of row -->
-        </div><!-- end of container -->
-    </section> <!-- end of portfolio section -->
-
-
-    <!-- contact section -->
-    <section class="section" id="contact">
-        <div class="container text-center">
-            <p class="section-subtitle">¿Por qué no contactarme?</p>
-            <h6 class="section-title mb-5">Info Contacto </h6>
-            <!-- contact form -->
-            <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Usuario</th>
-                    <th scope="col">Plataforma</th>
-                    <th scope="col">Link</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Carlos Elías Rivera Mercado</td>
-                    <td>Linkedin</td>
-                    <td><a href="https://www.linkedin.com/in/carlos-el%C3%ADas-rivera-mercado-435002239/">https://www.linkedin.com/in/carlos-el%C3%ADas-rivera-mercado-435002239/</a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Carlos_Elías_Riv#2046</td>
-                    <td>Discord</td>
-                    <td><a href="https://discord.com/">https://discord.com/</a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Carlos Rivera</td>
-                    <td>Gmail</td>
-                    <td><a href="mailto:carlos.rivera311202@gmail.com">carlos.rivera311202@gmail.com</a></td>
-                  </tr>
-                </tbody>
-              </table>
-              
-
-        </div><!-- end of container -->
-    </section><!-- end of contact section -->
-
-    <!-- blog section -->
-    <section class="section" id="blog">
-        <!-- container -->
-        <div class="container text-center">
-            <h6 class="section-title mb-6">Blog de AGI</h6>
-            <!-- blog-wrapper -->
-            <div class="blog-card">
-                <div class="blog-card-header">
-                    <img src="assets/imgs/ai.png" class="blog-card-img" alt="">
-                </div>
-                <div class="blog-card-body">
-                    <h5 class="blog-card-title">AGI, ¿inteligencia superior a la humana cada vez más cercana?</h6>
-
-                    <p><b>Desde la llegada de ChatGPT al público en general, la vida no ha vuelto a ser la misma, y la pregunta radica en saber que sigue.</b></p>
-                    <p>Si te interesa la IA y te gustaría saber cual será el próximo paso en esta área, este blog es para ti</p>
-
-                    <a href="components.html" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
-                </div>
-            </div><!-- end of blog wrapper -->
-
-        </div><!-- end of container -->
-    </section><!-- end of blog section -->
-
-    <!-- footer -->
-    <div class="container">
-        <footer class="footer">       
-            <div class="social-links text-right m-auto ml-sm-auto">
-                <a href="https://www.facebook.com/profile.php?id=100013482671763" class="link"><i class="ti-facebook"></i></a>
-                <a href="https://twitter.com/carlos_elias_" class="link"><i class="ti-twitter-alt"></i></a>
-                <a href="https://www.linkedin.com/in/carlos-el%C3%ADas-rivera-mercado-435002239/" class="link"><i class="ti-linkedin"></i></a>
-                <a href="https://www.instagram.com/carlos.rivera.m/" class="link"><i class="ti-instagram"></i></a>
             </div>
-        </footer>
-    </div> <!-- end of page footer -->
-	
-	<!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+        </div>
+    </section>
 
-    <!-- bootstrap 3 affix -->
-	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Experience" data-es="Experiencia">Experience</h2>
+                <p class="section-subtitle" data-en="My professional journey in data science and software development" data-es="Mi trayectoria profesional en ciencia de datos y desarrollo de software">
+                    My professional journey in data science and software development
+                </p>
+            </div>
+            
+            <div class="timeline">
+                <!-- Deep Dive - Current Position -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Deep Dive</h3>
+                            <span class="timeline-date" data-en="October 2023 - Present" data-es="Octubre 2023 - Presente">October 2023 - Present</span>
+                        </div>
+                        <h4 class="timeline-role" data-en="Jr. Data Scientist and Lead of Research" data-es="Científico de Datos Jr. y Líder de Investigación">Jr. Data Scientist and Lead of Research</h4>
+                        <ul class="timeline-list">
+                            <li data-en="Designed and deployed a state-of-the-art face verification model using PyTorch on AWS (EC2 + Auto Scaling + ELB) to replace AWS Rekognition, reducing costs by 56%, achieving 99.99% precision, and processing 95% of requests in under 4 seconds" data-es="Diseñé y desplegué un modelo de verificación facial de última generación usando PyTorch en AWS (EC2 + Auto Scaling + ELB) para reemplazar AWS Rekognition, reduciendo costos en un 56%, logrando 99.99% de precisión y procesando el 95% de las solicitudes en menos de 4 segundos">
+                                Designed and deployed a state-of-the-art face verification model using PyTorch on AWS (EC2 + Auto Scaling + ELB) to replace AWS Rekognition, reducing costs by 56%, achieving 99.99% precision, and processing 95% of requests in under 4 seconds
+                            </li>
+                            <li data-en="Developed and deployed a chatbot in Google Cloud using LangGraph, leveraging Retrieval-Augmented Generation (RAG) techniques applied to an LLM. The chatbot efficiently answered personalized client inquiries about policy benefits and constraints for multiple insurance companies via WhatsApp" data-es="Desarrollé y desplegué un chatbot en Google Cloud usando LangGraph, aprovechando técnicas de Generación Aumentada por Recuperación (RAG) aplicadas a un LLM. El chatbot respondió eficientemente consultas personalizadas de clientes sobre beneficios y restricciones de pólizas para múltiples compañías de seguros vía WhatsApp">
+                                Developed and deployed a chatbot in Google Cloud using LangGraph, leveraging Retrieval-Augmented Generation (RAG) techniques applied to an LLM. The chatbot efficiently answered personalized client inquiries about policy benefits and constraints for multiple insurance companies via WhatsApp
+                            </li>
+                            <li data-en="Worked on a project to clean and consolidate various data sources for a law firm, including database management, API calls, web scraping, and client management" data-es="Trabajé en un proyecto para limpiar y consolidar varias fuentes de datos para un despacho de abogados, incluyendo gestión de bases de datos, llamadas API, web scraping y gestión de clientes">
+                                Worked on a project to clean and consolidate various data sources for a law firm, including database management, API calls, web scraping, and client management
+                            </li>
+                            <li data-en="Constructed a comprehensive solution for quantifying consulting hours, employee mental health monitoring, and improving work experience. The solution included database management, web scraping, API development, dashboard creation, and mental health chatbot" data-es="Construí una solución integral para cuantificar horas de consultoría, monitoreo de salud mental de empleados y mejora de la experiencia laboral. La solución incluyó gestión de bases de datos, web scraping, desarrollo de API, creación de dashboards y chatbot de salud mental">
+                                Constructed a comprehensive solution for quantifying consulting hours, employee mental health monitoring, and improving work experience. The solution included database management, web scraping, API development, dashboard creation, and mental health chatbot
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- ITAM -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">ITAM</h3>
+                            <span class="timeline-date" data-en="February 2024 - August 2024" data-es="Febrero 2024 - Agosto 2024">February 2024 - August 2024</span>
+                        </div>
+                        <h4 class="timeline-role" data-en="PhD Research Assistant" data-es="Asistente de Investigación de Doctorado">PhD Research Assistant</h4>
+                        <ul class="timeline-list">
+                            <li data-en="Employed computer vision techniques to detect skin color in various images, overcoming challenges such as poor lighting, white imbalance, and inconsistent subject placement. Achieved 95% accuracy compared to human detectors" data-es="Empleé técnicas de visión por computadora para detectar color de piel en varias imágenes, superando desafíos como iluminación deficiente, desbalance de blancos y colocación inconsistente del sujeto. Logré 95% de precisión comparado con detectores humanos">
+                                Employed computer vision techniques to detect skin color in various images, overcoming challenges such as poor lighting, white imbalance, and inconsistent subject placement. Achieved 95% accuracy compared to human detectors
+                            </li>
+                            <li data-en="Utilized LLMs and fine-tuning to classify and measure nationalism in 3,000+ essays. Developed metrics for third and first-person usage, aiding in the evaluation of treatment and control groups. Achieved an RMSE of 1 compared to human evaluators" data-es="Utilicé LLMs y fine-tuning para clasificar y medir nacionalismo en más de 3,000 ensayos. Desarrollé métricas para uso de tercera y primera persona, ayudando en la evaluación de grupos de tratamiento y control. Logré un RMSE de 1 comparado con evaluadores humanos">
+                                Utilized LLMs and fine-tuning to classify and measure nationalism in 3,000+ essays. Developed metrics for third and first-person usage, aiding in the evaluation of treatment and control groups. Achieved an RMSE of 1 compared to human evaluators
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Crime & Security Project -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title" data-en="Crime and Security Project" data-es="Proyecto de Crimen y Seguridad">Crime and Security Project</h3>
+                            <span class="timeline-date" data-en="November 2023 - Present" data-es="Noviembre 2023 - Presente">November 2023 - Present</span>
+                        </div>
+                        <h4 class="timeline-role" data-en="Technical Lead and Software Engineer" data-es="Líder Técnico e Ingeniero de Software">Technical Lead and Software Engineer</h4>
+                        <ul class="timeline-list">
+                            <li data-en="Led the development and deployment of an interactive crime mapping platform for Mexico City neighborhoods" data-es="Lideré el desarrollo y despliegue de una plataforma interactiva de mapeo del crimen para colonias de la Ciudad de México">
+                                Led the development and deployment of an interactive crime mapping platform for Mexico City neighborhoods
+                            </li>
+                            <li data-en="Currently working on expanding services to non-governmental organizations to improve community safety" data-es="Actualmente trabajando en expandir servicios a organizaciones no gubernamentales para mejorar la seguridad comunitaria">
+                                Currently working on expanding services to non-governmental organizations to improve community safety
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Meyawo js -->
-    <script src="assets/js/meyawo.js"></script>
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Projects" data-es="Proyectos">Projects</h2>
+                <p class="section-subtitle" data-en="Innovative solutions leveraging AI, Machine Learning, and Cloud Technologies" data-es="Soluciones innovadoras aprovechando IA, Machine Learning y Tecnologías en la Nube">
+                    Innovative solutions leveraging AI, Machine Learning, and Cloud Technologies
+                </p>
+                </div>              
+            
+            <div class="projects-grid">
+                <!-- Face Verification Model -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/imgs/robotcoding.png" alt="Face Verification Model">
+                        <div class="project-overlay">
+                            <span class="project-tag" data-en="Machine Learning" data-es="Machine Learning">Machine Learning</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title" data-en="Face Verification Model" data-es="Modelo de Verificación Facial">Face Verification Model</h3>
+                        <p class="project-description" data-en="State-of-the-art face verification system using PyTorch, deployed on AWS with auto-scaling capabilities. Replaced AWS Rekognition with 56% cost reduction and 99.99% precision." data-es="Sistema de verificación facial de última generación usando PyTorch, desplegado en AWS con capacidades de auto-escalado. Reemplazó AWS Rekognition con 56% de reducción de costos y 99.99% de precisión.">
+                            State-of-the-art face verification system using PyTorch, deployed on AWS with auto-scaling capabilities. Replaced AWS Rekognition with 56% cost reduction and 99.99% precision.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">AWS EC2</span>
+                            <span class="tech-tag">Computer Vision</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Insurance Chatbot -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/imgs/ai.png" alt="Insurance Chatbot">
+                        <div class="project-overlay">
+                            <span class="project-tag" data-en="Natural Language Processing" data-es="Procesamiento de Lenguaje Natural">Natural Language Processing</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title" data-en="Insurance Chatbot with RAG" data-es="Chatbot de Seguros con RAG">Insurance Chatbot with RAG</h3>
+                        <p class="project-description" data-en="Intelligent chatbot deployed on Google Cloud using LangGraph and Retrieval-Augmented Generation (RAG). Efficiently answers personalized insurance policy inquiries via WhatsApp." data-es="Chatbot inteligente desplegado en Google Cloud usando LangGraph y Generación Aumentada por Recuperación (RAG). Responde eficientemente consultas personalizadas sobre pólizas de seguros vía WhatsApp.">
+                            Intelligent chatbot deployed on Google Cloud using LangGraph and Retrieval-Augmented Generation (RAG). Efficiently answers personalized insurance policy inquiries via WhatsApp.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">LangGraph</span>
+                            <span class="tech-tag">RAG</span>
+                            <span class="tech-tag">Google Cloud</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Crime & Security Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/imgs/monkeytyping.png" alt="Crime & Security">
+                        <div class="project-overlay">
+                            <span class="project-tag" data-en="Data Visualization" data-es="Visualización de Datos">Data Visualization</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title" data-en="Crime & Security Platform" data-es="Plataforma de Crimen y Seguridad">Crime & Security Platform</h3>
+                        <p class="project-description" data-en="Interactive crime mapping and analysis tool for Mexico City neighborhoods. Provides real-time data visualization and crime pattern insights for community safety." data-es="Herramienta interactiva de mapeo y análisis del crimen para colonias de la Ciudad de México. Proporciona visualización de datos en tiempo real e insights sobre patrones criminales para la seguridad comunitaria.">
+                            Interactive crime mapping and analysis tool for Mexico City neighborhoods. Provides real-time data visualization and crime pattern insights for community safety.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">R Shiny</span>
+                            <span class="tech-tag">Data Analysis</span>
+                            <span class="tech-tag">Visualization</span>
+                        </div>
+                        <a href="https://carlos-elias-riv.shinyapps.io/ConsultaMapasCrimen/" target="_blank" class="project-link" data-en="View Project" data-es="Ver Proyecto">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Dive CLI Chatbot -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/imgs/computadora.svg" alt="Dive CLI">
+                        <div class="project-overlay">
+                            <span class="project-tag" data-en="Current Project" data-es="Proyecto Actual">Current Project</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title" data-en="Dive CLI Chatbot" data-es="Chatbot CLI de Dive">Dive CLI Chatbot</h3>
+                        <p class="project-description" data-en="NPM package connecting developers to an intelligent chatbot with access to Dive's latest documentation, procedures, and technical guides. Quick answers to questions like 'How can I build a quick lambda?' or 'Where's the documentation for this project?'" data-es="Paquete NPM que conecta desarrolladores a un chatbot inteligente con acceso a la documentación más reciente de Dive, procedimientos y guías técnicas. Respuestas rápidas a preguntas como '¿Cómo puedo construir un lambda rápido?' o '¿Dónde está la documentación de este proyecto?'">
+                            NPM package connecting developers to an intelligent chatbot with access to Dive's latest documentation, procedures, and technical guides. Quick answers to questions like "How can I build a quick lambda?" or "Where's the documentation for this project?"
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">CLI</span>
+                            <span class="tech-tag">LLM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Publications Section -->
+    <section class="publications" id="publications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Publications" data-es="Publicaciones">Publications</h2>
+                <p class="section-subtitle" data-en="Thoughts and insights on AI, Data Science, and Innovation" data-es="Pensamientos e insights sobre IA, Ciencia de Datos e Innovación">
+                    Thoughts and insights on AI, Data Science, and Innovation
+                </p>
+            </div>
+            
+            <div class="publication-card">
+                <div class="publication-image">
+                    <img src="assets/imgs/ai.png" alt="R&D Article">
+                </div>
+                <div class="publication-content">
+                    <span class="publication-badge">Medium</span>
+                    <h3 class="publication-title" data-en="R&D: The Investment in Answering 'What Would Happen If...?'" data-es="R&D: La Inversión en Contestar '¿Qué Pasaría Si...?'">
+                        R&D: The Investment in Answering "What Would Happen If...?"
+                    </h3>
+                    <p class="publication-excerpt" data-en="An exploration of how research and development investments drive innovation by answering hypothetical questions and creating solutions for future challenges." data-es="Una exploración de cómo las inversiones en investigación y desarrollo impulsan la innovación al responder preguntas hipotéticas y crear soluciones para desafíos futuros.">
+                        An exploration of how research and development investments drive innovation by answering hypothetical questions and creating solutions for future challenges.
+                    </p>
+                    <a href="https://medium.com/@dive.ai/r-d-la-inversi%C3%B3n-en-contestar-qu%C3%A9-pasar%C3%ADa-si-48dba5045f05" target="_blank" class="publication-link" data-en="Read on Medium" data-es="Leer en Medium">
+                        Read on Medium <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Skills & Expertise" data-es="Habilidades y Experiencia">Skills & Expertise</h2>
+                <p class="section-subtitle" data-en="Technologies and tools I work with" data-es="Tecnologías y herramientas con las que trabajo">
+                    Technologies and tools I work with
+                </p>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Machine Learning & AI -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="skill-title" data-en="Machine Learning & AI" data-es="Machine Learning e IA">Machine Learning & AI</h3>
+                    <div class="skill-tags">
+                        <span>PyTorch</span>
+                        <span>TensorFlow</span>
+                        <span>Scikit-learn</span>
+                        <span>Computer Vision</span>
+                        <span>Deep Learning</span>
+                    </div>
+                </div>
+                
+                <!-- Natural Language Processing -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="skill-title" data-en="Natural Language Processing" data-es="Procesamiento de Lenguaje Natural">Natural Language Processing</h3>
+                    <div class="skill-tags">
+                        <span>LangGraph</span>
+                        <span>RAG</span>
+                        <span>LLMs</span>
+                        <span>Fine-tuning</span>
+                        <span>Transformers</span>
+                    </div>
+                </div>
+                
+                <!-- Cloud Architecture -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="skill-title" data-en="Cloud Architecture" data-es="Arquitectura en la Nube">Cloud Architecture</h3>
+                    <div class="skill-tags">
+                        <span>AWS EC2</span>
+                        <span>AWS Lambda</span>
+                        <span>AWS S3</span>
+                        <span>Google Cloud</span>
+                        <span>Auto Scaling</span>
+                    </div>
+                </div>
+                
+                <!-- Programming Languages -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="skill-title" data-en="Programming Languages" data-es="Lenguajes de Programación">Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>C++</span>
+                        <span>SQL</span>
+                        <span>Bash</span>
+                    </div>
+                </div>
+                
+                <!-- Data Engineering -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="skill-title" data-en="Data Engineering" data-es="Ingeniería de Datos">Data Engineering</h3>
+                    <div class="skill-tags">
+                        <span>SQL</span>
+                        <span>NoSQL</span>
+                        <span>ETL Pipelines</span>
+                        <span>Web Scraping</span>
+                        <span>APIs</span>
+                    </div>
+                </div>
+                
+                <!-- Full Stack Development -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="skill-title" data-en="Full Stack Development" data-es="Desarrollo Full Stack">Full Stack Development</h3>
+                    <div class="skill-tags">
+                        <span>Frontend</span>
+                        <span>Backend</span>
+                        <span>APIs</span>
+                        <span>Dashboards</span>
+                        <span>R Shiny</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="languages-section">
+                <h3 class="languages-title" data-en="Languages" data-es="Idiomas">Languages</h3>
+                <div class="languages-grid">
+                    <div class="language-item">
+                        <span class="language-name" data-en="Spanish" data-es="Español">Spanish</span>
+                        <span class="language-level" data-en="Native" data-es="Nativo">Native</span>
+                    </div>
+                    <div class="language-item">
+                        <span class="language-name" data-en="English" data-es="Inglés">English</span>
+                        <span class="language-level">B2+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+    <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Get In Touch" data-es="Contáctame">Get In Touch</h2>
+                <p class="section-subtitle" data-en="Let's work together on your next project" data-es="Trabajemos juntos en tu próximo proyecto">
+                    Let's work together on your next project
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4 data-en="Email" data-es="Correo">Email</h4>
+                            <a href="mailto:carlos.rivera311202@gmail.com">carlos.rivera311202@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4 data-en="Phone" data-es="Teléfono">Phone</h4>
+                            <a href="tel:+525618155628">+52 56 18 15 5628</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4 data-en="Location" data-es="Ubicación">Location</h4>
+                            <p data-en="Mexico City, Mexico" data-es="Ciudad de México, México">Mexico City, Mexico</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-social">
+                    <h3 data-en="Connect With Me" data-es="Conéctate Conmigo">Connect With Me</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/Carlos-Elias-Riv" target="_blank" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/carlos-el%C3%ADas-rivera-mercado-435002239/" target="_blank" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://twitter.com/carlos_elias_" target="_blank" class="social-link" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/carlos.rivera.m/" target="_blank" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text" data-en="© 2024 Carlos Elias Rivera Mercado. All rights reserved." data-es="© 2024 Carlos Elias Rivera Mercado. Todos los derechos reservados.">
+                © 2024 Carlos Elias Rivera Mercado. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
